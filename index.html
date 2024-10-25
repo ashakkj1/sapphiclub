@@ -56,9 +56,13 @@
             <!-- Slider main container -->
 <div class="swiper">
   <!-- Additional required wrapper -->
+
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
   <div class="swiper-wrapper">
     <!-- Slides -->
-    <div class="swiper-slide"><img src="img/image (1).svg" alt="Livro O amor não é óbvio"></div>
+    <div class="swiper-slide"><img src="img/image.svg" alt="Livro O amor não é óbvio"></div>
     <div class="swiper-slide"><img src="img/image (2).svg" alt="Livro Carmilla"></div>
     <div class="swiper-slide"><img src="img/image (3).svg" alt="Livro Os sete maridos de Evelyn Hugo"></div>
     <div class="swiper-slide"><img src="img/image (4).svg" alt="Livro última parada"></div>
@@ -72,28 +76,100 @@
     <div class="swiper-slide"><img src="img/image (12).svg" alt="Livro (Não)conta pra ela"></div>
     <div class="swiper-slide"><img src="img/image (13).svg" alt="Livro Uma pitada de sorte"></div>
     <div class="swiper-slide"><img src="img/image (14).svg" alt="Livro Se ela fosse minha"></div>
-    
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
   <div class="swiper-button-prev"></div>
   <div class="swiper-button-next"></div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
 </div>
+
+<div class="card">
+  <!-- 1 linha -->
+  <div class="card__descrição">
+    <!-- 1 coluna -->
+    <div class="descrição">
+      <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+      <h2 class="descrição__titulo-livro">Conectadas</h2>
+      <p class="descrição__texto">Ser uma garota gamer não é fácil. Principalmente quando um romance está em jogo.</p>
+    </div>
+    <!-- 2 coluna -->
+    <img src="img/image  (15).svg" class="descrição__imagem"> 
+  </div>
+
+  <!-- 2 linha -->
+  <div class="card__botões">
+    <!-- 1 coluna -->
+    <ul class="botões">
+    <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+    <li class="botões__item>"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+    </ul>
+    <!-- 2 coluna -->
+     <a href="#" class="botões__ancora">Saiba mais</a>
+  </div>
+</div>
+
+<!-- Autora do mês-->
+
+<div class="card">
+  <!-- 1 linha -->
+  <div class="card__descrição">
+    <!-- 1 coluna -->
+    <div class="descrição">
+      <h1 class="descrição__subtitulo">✭✭✭✭✭</h1>
+      <h3 class="descrição__titulo">Autora do mês</h3>
+      <h2 class="descrição__titulo-livro">Elayne Baeta</h2>
+      <p class="descrição__texto">Lésbica, baiana, autora best-seller, escreveu o primeiro romance lésbico jovem a integrar a lista dos livros mais vendidos da Revista Veja. Seu podcast “lésbica & ansiosa” já foi ouvido mais de 100 mil vezes por meninas e mulheres de todo país.</p>
+    </div>
+    <!-- 2 coluna -->
+    <img src="img/Elayne Baeta.svg" class="descrição__imagem"> 
+  </div>
+
+  <!-- 2 linha -->
+  <div class="card__botões">
+  </div>
+</div>
+
         </section>
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <script>
           const swiper = new Swiper('.swiper', {
-            spaceBetween: 10,
-            slidesPerView: 1,
+              spaceBetween: 10,
+              slidesPerView: 3,
+              pagination: {
+                  el: '.swiper-pagination',
+                  type: 'bullets',
+              },
           });
-        </script>
+      </script>
 
-      </body>
+</script>
+
+<section class="carrosselptd">
+  <h2 class="carrossel__tituloptd">Favoritos</h2>
+  <!-- Slider main container -->
+<div class="swiper">
+<!-- Additional required wrapper -->
+
+<!-- If we need pagination -->
+<div class="swiper-pagination"></div>
+
+<div class="swiper-wrapper">
+<!-- Slides -->
+<div class="swiper-slide"><img src="img/Foi mal,cara.svg" alt="Livro O amor não é óbvio"></div>
+<div class="swiper-slide"><img src="img/A princesa e o queijo quente.svg" alt="Livro Carmilla"></div>
+<div class="swiper-slide"><img src="img/As vantagens de ser você.svg" alt="Livro Os sete maridos de Evelyn Hugo"></div>
+<div class="swiper-slide"><img src="img/Eu beijei sarah.svg" alt="Livro última parada"></div>
+<div class="swiper-slide"><img src="img/Oxe, baby.svg" alt="Livro Vermelho Branco e Sangue Azul"></div>
+<div class="swiper-slide"><img src="img/Guia para lesbicas.svg" alt="Livro Romance real"></div>
+
+<!-- If we need navigation buttons -->
+<div class="swiper-button-prev"></div>
+<div class="swiper-button-next"></div>
+
+</div>
+
+  </body>
       
       </html>
