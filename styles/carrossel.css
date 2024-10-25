@@ -72,13 +72,3 @@ padding: 0.5em;
     font-weight: 700;
     text-decoration: none;
 }
-
-.carrossel__tituloptd {
-    color: var(--verde);
-    background-color: var(--branco);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 700;
-    padding: 1em 0 0.5em 0;
-}
